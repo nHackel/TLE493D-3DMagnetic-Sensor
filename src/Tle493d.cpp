@@ -200,7 +200,7 @@ float Tle493d::getX(void)
 	return static_cast<float>(getRawX()) * TLE493D_B_MULT;
 }
 
-int16_t Tlv493d::getRawX(void)
+int16_t Tle493d::getRawX(void)
 {
 	return mXdata;
 }
@@ -210,7 +210,7 @@ float Tle493d::getY(void)
 	return static_cast<float>(getRawY()) * TLE493D_B_MULT;
 }
 
-int16_t Tlv493d::getRawY(void)
+int16_t Tle493d::getRawY(void)
 {
 	return mYdata;
 }
@@ -220,7 +220,7 @@ float Tle493d::getZ(void)
 	return static_cast<float>(getRawZ()) * TLE493D_B_MULT;
 }
 
-int16_t Tlv493d::getRawŹ(void)
+int16_t Tle493d::getRawŹ(void)
 {
 	return mZdata;
 }
