@@ -220,7 +220,7 @@ float Tle493d::getZ(void)
 	return static_cast<float>(getRawZ()) * TLE493D_B_MULT;
 }
 
-int16_t Tle493d::getRawŹ(void)
+int16_t Tle493d::getRawZ(void)
 {
 	return mZdata;
 }
