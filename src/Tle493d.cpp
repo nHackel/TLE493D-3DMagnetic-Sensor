@@ -197,17 +197,32 @@ Tle493d_Error_t Tle493d::updateData(void)
 
 float Tle493d::getX(void)
 {
-	return static_cast<float>(mXdata) * TLE493D_B_MULT;
+	return static_cast<float>(getRawX()) * TLE493D_B_MULT;
+}
+
+int16_t Tlv493d::getRawX(void)
+{
+	return mXdata;
 }
 
 float Tle493d::getY(void)
 {
-	return static_cast<float>(mYdata) * TLE493D_B_MULT;
+	return static_cast<float>(getRawY()) * TLE493D_B_MULT;
+}
+
+int16_t Tlv493d::getRawY(void)
+{
+	return mYdata;
 }
 
 float Tle493d::getZ(void)
 {
-	return static_cast<float>(mZdata) * TLE493D_B_MULT;
+	return static_cast<float>(getRawZ()) * TLE493D_B_MULT;
+}
+
+int16_t Tlv493d::getRawŹ(void)
+{
+	return mZdata;
 }
 
 float Tle493d::getTemp(void)

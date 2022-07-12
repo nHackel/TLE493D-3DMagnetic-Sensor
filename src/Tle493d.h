@@ -140,6 +140,18 @@ class Tle493d
 	 * @return the Cartesian z-coordinate
 	 */
 	float getZ(void);
+	/**
+	 * @return the raw Cartesian x-coordinate
+	 */
+	int16_t getRawX(void);
+	/**
+	 * @return the raw Cartesian y-coordinate
+	 */
+	int16_t getRawY(void);
+	/**
+	 * @return the raw Cartesian z-coordinate
+	 */
+	int16_t getRawZ(void);
 
 	/**
 	 * @return norm of the magnetic field vector sqrt(x^2 + y^2 + z^2)
